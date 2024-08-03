@@ -108,20 +108,7 @@ def modify_file_content(file_path, find_text, replace_text):
         return False
 
 
-# def get_user_input():
-#     """Prompts the user to enter source paths until they choose to quit.
-
-#     Returns:
-#         A list of source paths entered by the user.
-#     """
-#     sources = []
-#     while True:
-#         source = input("Enter source path (or 'q' to quit): ")
-#         if source == 'q':
-#             break
-#         sources.append(source)
-#     return sources
-
+ 
  
 
 
@@ -176,82 +163,7 @@ def file_operation(sources, dest, operation='copy'):
 import os
 import shutil
 import argparse
-
  
-
-
-# parser = argparse.ArgumentParser(description='File operations tool')
-# subparsers = parser.add_subparsers(dest='command', help='The command to execute')
-
-#     # Search command
-# search_parser = subparsers.add_parser('search', help='Search for files')
-# search_parser.add_argument('-d', '--directory', required=True, help='Directory to search in')
-# search_parser.add_argument('-s', '--searchvalue', required=True, help='File name or extension to search for')
-
-#     # Rename command
-# rename_parser = subparsers.add_parser('rename', help='Rename a file')
-# rename_parser.add_argument('-f', '--file_path', required=True, help='File path to rename')
-# rename_parser.add_argument('-n', '--new_name_rule', required=True, help='New name or rule')
-
-#     # Modify command
-# modify_parser = subparsers.add_parser('modify', help='Modify file content')
-# modify_parser.add_argument('-f', '--file_path', required=True, help='File path to modify')
-# modify_parser.add_argument('-find', '--find_text', required=True, help='Text to find')
-# modify_parser.add_argument('-replace', '--replace_text', required=True, help='Text to replace with')
-
-#     # Operation command
-# operation_parser = subparsers.add_parser('operation', help='Perform file operations (copy or move)')
-# operation_parser.add_argument('-sources', nargs='+', required=True, help='Source file or directory paths')
-# operation_parser.add_argument('-dest', required=True, help='Destination directory path')
-# operation_parser.add_argument('-op', '--operation', choices=['copy', 'move'], default='copy', help='Operation to perform (copy or move)')
-# args = parser.parse_args("")
-
-# while True:
-#         command = input("Enter command (search, rename, modify, operation, or 'q' to quit): ")
-#         if command == 'q':
-#             print("Thank you for using our tool.")
-#             break
-
-#         if command not in ['search', 'rename', 'modify', 'operation']:
-#             print("Invalid command. Please choose from: search, rename, modify, operation, or 'q' to quit.")
-#             continue
-
-    
-#         if command == 'search':
-#             directory = input("Enter directory to search in: ")
-#             search_value = input("Enter file name or extension to search for: ")
-#             args = parser.parse_args([command, '-d', directory, '-s', search_value])
-        
-
-         
-#         elif command == 'rename':
-#             file_path = input("Enter file path to rename: ")
-#             new_name_rule = input("Enter new name or rule: ")
-#             args = parser.parse_args([command, '-f', file_path, '-n', new_name_rule])
-#         elif command == 'modify':
-#             file_path = input("Enter file path to modify: ")
-#             find_text = input("Enter text to find: ")
-#             replace_text = input("Enter text to replace with: ")
-#             args = parser.parse_args([command, '-f', file_path, '-find', find_text, '-replace', replace_text])
-#         elif command == 'operation':
-#             sources_input = input("Enter source file or directory paths (separated by spaces): ")
-#             sources = sources_input.split()
-#             dest = input("Enter destination directory path: ")
-#             operation = input("Enter operation (copy or move): ")
-#             args = parser.parse_args([command, '-sources'] + sources + ['-dest', dest, '-op', operation])
-
-#         if args.command == "search":
-#             results = FileSearching(args.directory, args.searchvalue)  
-#             if results:
-#                 print("Files found:")
-#                 for result in results:
-#                     print(result)
-#         elif args.command == "rename":
-#             rename_file(args.file_path, args.new_name_rule)
-#         elif args.command == "modify":
-#             modify_file_content(args.file_path, args.find_text, args.replace_text)
-#         elif args.command == "operation":
-#             file_operation(args.sources, args.dest, args.operation)
 parser = argparse.ArgumentParser(description='File operations tool')
 subparsers = parser.add_subparsers(dest='command', help='The command to execute')
 
@@ -307,30 +219,7 @@ elif args.command == 'operation':
 # In[19]:
 
 
-import os
-import fnmatch
-
-def FileSearching(directory, searchvalue):
-    """Searches for a file with the given name/ extension  in the specified directory.
-
-    Args:
-        directory: The directory to search in.
-        searchvalue: The name/extension  of the file to search for.
-
-    Returns:
-        The full path of the file if found, otherwise
-        None.
-    """
-
-    results = []
-    for root, _, files in os.walk(directory):
-        for file in files:
-            if fnmatch.fnmatchcase(file, f"*{searchvalue}*") or file.endswith(f".{searchvalue}"):
-                results.append(os.path.join(root, file))
-    return results
-
-
-
+ 
 
 # In[37]:
 
