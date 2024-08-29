@@ -1,8 +1,8 @@
-# H1 **FIFA Data Analysis Project**
-## H2 Overview
+#  **FIFA Data Analysis Project**
+##  Overview
 This project involves an in-depth analysis of a FIFA dataset, applying various data science techniques to extract meaningful insights about the players. The primary goal is to answer key questions related to player performance, demographics, and distribution across different clubs and positions.
 
-### H3 Steps Involved
+###  Steps Involved
 **Reading the Data:**
 Loaded the FIFA dataset into a pandas DataFrame for analysis.
 
@@ -31,7 +31,7 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 **Splitting the Data:**
 -Divided the dataset into training and testing sets to prepare for model development.
 
-#### H4 Key Questions Answered
+####  Key Questions Answered
 
 **Age Distribution in Famous Clubs:**
 -Analyzed and visualized the age distribution of players in well-known football clubs.
@@ -48,10 +48,13 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 -Developed visualizations (e.g., bar plots, histograms) to represent the overall scores of players.
 -Provided insights into the performance levels of players across the dataset.
 
-##### H5 Tools and Libraries Used
+#####  Tools and Libraries Used
 1-Pandas for data manipulation and exploration
+
 2-Seaborn and Matplotlib for data visualization
+
 3-Scikit-learn for data preprocessing and splitting
+
 4-NumPy for numerical computations
 ###### H6 Conclusion
 -This project provided a comprehensive analysis of FIFA players, offering insights into player demographics, performance, and distribution across various attributes. 
