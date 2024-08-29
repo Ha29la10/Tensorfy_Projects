@@ -33,18 +33,22 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 
 ###  **Key Questions Answered**
 
-**Age Distribution in Famous Clubs:**
+**1-Age Distribution in Famous Clubs:**
 -Analyzed and visualized the age distribution of players in well-known football clubs.
 -Provided insights into the average age and experience level of players in top teams.
-**Overall Rating in Famous Clubs:**
+
+**2-Overall Rating in Famous Clubs:**
 -Examined the overall ratings of players in popular clubs.
 -Compared the distribution of ratings across different teams.
-**Who are the 10 Best Players?**
+
+**3-Who are the 10 Best Players?**
 -Identified the top 10 players based on overall ratings.
- **Visualizing Number of Players at Different Positions:**
+
+ **4-Visualizing Number of Players at Different Positions:**
 -Created visualizations to show the distribution of players across various positions (e.g., forward, midfield, defense).
 -Highlighted which positions are most densely populated.
-**How Can We Visualize the Overall Score of the Players?**
+
+**5-How Can We Visualize the Overall Score of the Players?**
 -Developed visualizations (e.g., bar plots, histograms) to represent the overall scores of players.
 -Provided insights into the performance levels of players across the dataset.
 
