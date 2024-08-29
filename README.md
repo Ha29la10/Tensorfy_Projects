@@ -31,7 +31,7 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 **Splitting the Data:**
 -Divided the dataset into training and testing sets to prepare for model development.
 
-####  Key Questions Answered
+###  **Key Questions Answered**
 
 **Age Distribution in Famous Clubs:**
 -Analyzed and visualized the age distribution of players in well-known football clubs.
@@ -48,7 +48,7 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 -Developed visualizations (e.g., bar plots, histograms) to represent the overall scores of players.
 -Provided insights into the performance levels of players across the dataset.
 
-#####  Tools and Libraries Used
+###  **Tools and Libraries Used**
 1-Pandas for data manipulation and exploration
 
 2-Seaborn and Matplotlib for data visualization
@@ -56,6 +56,6 @@ Loaded the FIFA dataset into a pandas DataFrame for analysis.
 3-Scikit-learn for data preprocessing and splitting
 
 4-NumPy for numerical computations
-###### H6 Conclusion
+### **Conclusion**
 -This project provided a comprehensive analysis of FIFA players, offering insights into player demographics, performance, and distribution across various attributes. 
 -The findings can be used to understand trends in football player characteristics and inform decision-making for team management and player scouting.
