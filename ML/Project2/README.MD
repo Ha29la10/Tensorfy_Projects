@@ -70,6 +70,4 @@ These observations help highlight the typical ranges of critical health indicato
 
  
 
----
-
-**Disclaimer**: This project is intended for educational purposes and aims to explore the application of semi-supervised learning techniques in healthcare data analysis.
+ 
